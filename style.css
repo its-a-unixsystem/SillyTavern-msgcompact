@@ -1,0 +1,83 @@
+:root {
+    --mc-accent: var(--SmartThemeQuoteColor, #66bb6a);
+    --mc-stale: #e6a23c;
+}
+
+.mc_button.mc_state_active {
+    color: var(--mc-accent);
+}
+
+.mc_button.mc_state_inactive {
+    opacity: 0.4;
+}
+
+.mc_button.mc_state_stale {
+    color: var(--mc-stale);
+}
+
+.mes_text.mc_grayed {
+    opacity: 0.4;
+}
+
+.mc_block {
+    margin-top: 6px;
+    padding: 4px 8px;
+    border-left: 3px solid var(--mc-accent);
+    font-size: calc(var(--mainFontSize) * 0.95);
+}
+
+.mc_block.mc_inactive {
+    opacity: 0.45;
+}
+
+.mc_block.mc_stale {
+    border-left-color: var(--mc-stale);
+}
+
+.mc_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: calc(var(--mainFontSize) * 0.8);
+    opacity: 0.8;
+}
+
+.mc_label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.mc_stale_note {
+    display: none;
+    color: var(--mc-stale);
+}
+
+.mc_block.mc_stale .mc_stale_note {
+    display: inline;
+}
+
+.mc_controls {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.mc_controls i {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.mc_controls i:hover {
+    opacity: 1;
+}
+
+.mc_text {
+    color: var(--mc-accent);
+    white-space: pre-wrap;
+}
+
+.mc_edit_textarea {
+    width: 100%;
+    min-height: 80px;
+    margin-top: 4px;
+}

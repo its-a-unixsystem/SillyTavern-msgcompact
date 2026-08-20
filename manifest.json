@@ -1,0 +1,13 @@
+{
+    "display_name": "Message Compact",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "minimum_client_version": "1.13.0",
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Thomas",
+    "version": "0.1.0",
+    "homePage": "https://github.com/its-a-unixsystem/SillyTavern-msgcompact",
+    "generate_interceptor": "msgcompact_interceptor"
+}

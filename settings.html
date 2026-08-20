@@ -1,0 +1,25 @@
+<div id="msgcompact_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Message Compact</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <label for="mc_prompt">Compaction prompt (<code>{{message}}</code> is replaced with the message text; other ST macros work too)</label>
+            <textarea id="mc_prompt" class="text_pole textarea_compact" rows="9"></textarea>
+            <div id="mc_prompt_restore" class="menu_button">Restore default prompt</div>
+            <label for="mc_profile">Connection profile for compaction requests</label>
+            <select id="mc_profile" class="text_pole"></select>
+            <label for="mc_response_length">Max response tokens (0 = API default; thinking models need headroom for reasoning)</label>
+            <input id="mc_response_length" class="text_pole" type="number" min="0" step="10">
+            <label class="checkbox_label" for="mc_show_tokens">
+                <input id="mc_show_tokens" type="checkbox">
+                <span>Show token stats on compactions</span>
+            </label>
+            <label class="checkbox_label" for="mc_gray_original">
+                <input id="mc_gray_original" type="checkbox">
+                <span>Gray out the original when a compaction is active</span>
+            </label>
+        </div>
+    </div>
+</div>
